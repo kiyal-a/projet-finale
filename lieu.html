@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire de la commune d'Abobo</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/historique.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .destination-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+            height: 100%;
+            
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+        }
+
+        .card-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover .card-image {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 2rem;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .card-description {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card-features li {
+            padding: 0.3rem 0;
+            color: var(--accent-color);
+        }
+
+        .card-features i {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+            border-radius: 2px;
+        }
+
+        .destinations-section {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+
+        .btn-explore {
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-explore:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+            color: white;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .deo {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .titre-principal {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2e5d3b;
+            padding-top: 30px;
+        }
+
+        .gallery-section {
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .gallery-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 90px;
+            color: #2C3E50;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-col {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+           <img src="img/LOGO_ABOBO_Final-removebg-preview.png" alt="Logo Abobo" style="height: 70px; ; margin-right: 10px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historisque.html">Historique</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lieu.html">Lieux Clés</a></li>
+                    <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Perspectives.html">Perspectives</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+    <section id="destinations" class="destinations-section">
+        <div class="container">
+            <h1 class="titre-principal" style="text-align: center;">Lieux Clés de la commune d'Abobo</h1>
+            <h2 class="section-title fade-in">Zones cruciales</h2>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-card fade-in">
+                        <img src="img/mu.jpg" alt="le musée" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">
+                                <i class="fas fa-map-marker-alt me-2"></i>Mucat
+                            </h3>
+                            <p class="card-description">
+                                Le Musée des cultures contemporaines Adama Toungara a ouvert ses portes à Abobo (Côte
+                                d'Ivoire) le 11 mars 2020, après six ans de travaux. Implanté sur 3 500 m², il comprend
+                                
+                                Deux salles d'exposition,
+                                Une salle de conférence,
+                                Une bibliothèque avec espace multimédia,
+                                • Une cafétéria,
+                                • Des ateliers,
+                                • Des archives et des bureaux administratifs.
+                                Situé face à la mairie, ce musée décentralise la vie culturelle et s'inscrit dans la
+                                politique gouvernementale de valorisation du patrimoine. Accessible à tous (habitants et
+                                touristes), il vise à promouvoir l'art, la culture et l'éducation artistique.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-card fade-in">
+                        <img src="img/5.jpg" alt="Banco" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">
+                                <i class="fas fa-map-marker-alt me-2"></i>Le parc national du Banco
+                            </h3>
+                            <p class="card-description">
+                                Le parc national du Banco, situé au cœur d'Abidjan, s'étend sur 3 473 hectares et
+                                constitue le deuxième plus grand parc urbain au monde. Véritable poumon vert, il abrite
+                                une forêt primaire de 600 hectares avec des essences rares comme l'acajou et l'avodiré.
+                                Il joue un rôle essentiel dans l'approvisionnement en eau potable (40 % de l'eau
+                                distribuée à Abidjan) grâce à ses 29 forages, et capte 90 000 tonnes de CO₂ par an,
+                                contribuant ainsi à la lutte contre le changement climatique. Ce parc est un patrimoine
+                                écologique majeur pour la ville.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-card fade-in">
+                        <img src="img/3.jpg" alt="train" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">
+                                <i class="fas fa-map-marker-alt me-2"></i>La construction du train
+                            </h3>
+                            <p class="card-description">
+                                Le projet de métro d'Abidjan représente une avancée majeure pour la mobilité urbaine,
+                                notamment dans la commune d'Abobo. La ligne 1, dotée d'un dépôt ferroviaire à Abobo
+                                Sagbé et d'un tunnel de 210 mètres, permettra de transporter jusqu'à 540 000 passagers
+                                par jour. Ce métro moderne viendra renforcer les moyens de transport existants (bus
+                                SOTRA, gbaka, gares routières) et s'inscrit dans la dynamique de modernisation amorcée
+                                avec la nouvelle gare ferroviaire inaugurée en décembre 2022. L'objectif est de
+                                désengorger les routes et d'offrir un transport rapide et efficace.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-card fade-in">
+                        <img src="img/mun.jpg" alt="tirbunal" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">
+                                <i class="fas fa-map-marker-alt me-2"></i>Le Tribunal de Première Instance
+                            </h3>
+                            <p class="card-description">
+                                Le Tribunal de Première Instance d'Abobo est une juridiction de première instance située
+                                dans la commune d'Abobo, à Abidjan. Il a été inauguré récemment dans le cadre d'une
+                                démarche de justice de proximité, visant à rapprocher l'appareil judiciaire des
+                                populations. Le tribunal est composé de plusieurs bâtiments, dont des salles d'audience,
+                                un greffe et des bureaux pour le siège et le parquet.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-card fade-in">
+                        <img src="img/u.jpg" alt="université" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">
+                                <i class="fas fa-map-marker-alt me-2"></i>L'Université Nangui ABROGOUA
+                            </h3>
+                            <p class="card-description">
+                                L'Université Nangui Abrogoua (UNA), anciennement Université d'Abobo-Adjamé, a été créée
+                                en 1995 et renommée en 2012 en hommage à Nangui Abrogoua, une figure du peuple Tchaman
+                                (Ebrié) d'Abidjan. Elle a pour mission de former des cadres scientifiques et techniques,
+                                notamment en gestion de l'environnement et en technologie des aliments. L'UNA se
+                                spécialise dans la formation et la recherche en Sciences, Technologies, Ingénierie et
+                                Mathématiques (STIM), en Sciences de l'Environnement et de la Vie, en Biotechnologie et
+                                en Énergies renouvelables.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-card fade-in">
+                        <img src="img/2.jpg" alt="Complexe sportif" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">
+                                <i class="fas fa-map-marker-alt me-2"></i>Le complexe sportif
+                            </h3>
+                            <p class="card-description">
+
+                                Le Complexe sportif et socio-culturel, situé à Akeikoi dans la commune d'Abobo
+                                (Abidjan), a été inauguré le 12 mai 2023. L'Agora d'Abobo n'est pas seulement un
+                                complexe sportif : c'est un espace de vie, de formation, de culture et de solidarité. Il
+                                incarne la vision du gouvernement ivoirien et de ses partenaires pour mettre le sport et
+                                l'éducation au cœur du développement local.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2 class="gallery-title">Galerie photo d'Abobo</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 gallery-col">
+                    <img src="img/mun.jpg" alt="tribunal" class="gallery-img">
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 gallery-col">
+                    <img src="img/IMG-20250627-WA0003.jpg" alt="IMG-20250627-WA0003" class="gallery-img">
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 gallery-col">
+                    <img src="img/carosel.jpg" alt="abobo centre" class="gallery-img">
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 gallery-col">
+                    <img src="img/u.jpg" alt="université" class="gallery-img">
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 gallery-col">
+                    <img src="img/IMG-20250627-WA0002.jpg" alt="img" class="gallery-img">
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 gallery-col">
+                    <img src="img/ville.jpg" alt="ville " class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Galerie Video</h2>
+            <div class="gallery">
+                <div class="container">
+                    <video class="w-100" class="border" controls controls autoplay muted loop
+                        style=" border-radius: 20px;">
+                        <source src="media/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="carte-interactive-section py-5" style="padding-left:0;padding-right:0;">
+        <h2 class="text-center mb-4" style="color:var(--main-green);font-weight:700;">Carte interactive d'Abobo</h2>
+        <div id="map-abobo" style="height:380px; width: 100vw; max-width:100vw; border: radius 10px;; overflow:hidden; margin-left:calc(-50vw + 50%);"></div>
+    </section>
+
+   
+    <footer id="footer">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <h5>Liens de navigation</h5>
+                    <div class="footer-links">
+                        <a href="index.html">Accueil</a>
+                        <a href="historisque.html">Historique</a>
+                        <a href="lieu.html">Lieux Clés</a>
+                        <a href="actualites.html">Actualités</a>
+                        <a href="#">Perspectives</a>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <h5>Informations</h5>
+                   <div><i class="bi bi-geo-alt"></i> Mairie centrale d'Abobo, Abidjan, Côte d'Ivoire</div>
+          <div><i class="bi bi-telephone"></i> +225 07 88 50 76 38 </div>
+          <div><i class="bi bi-envelope"></i> siluekiyala1@gmail.com</div>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+   
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var map = L.map('map-abobo').setView([5.416, -4.033], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap',
+                maxZoom: 19
+            }).addTo(map);
+
+
+        });
+    </script>
+
+    <script>
+      
+        window.addEventListener('scroll', function () {
+            var elements = document.querySelectorAll('.fade-in');
+            for (var i = 0; i < elements.length; i++) {
+                var elementTop = elements[i].getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                if (elementTop < windowHeight - 100) {
+                    elements[i].classList.add('visible');
+                }
+            }
+        });
+
+        window.addEventListener('load', function () {
+            var elements = document.querySelectorAll('.fade-in');
+            for (var i = 0; i < elements.length; i++) {
+                var elementTop = elements[i].getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                if (elementTop < windowHeight - 100) {
+                    elements[i].classList.add('visible');
+                }
+            }
+        });
+
+       
+        document.addEventListener('DOMContentLoaded', function () {
+            var anchors = document.querySelectorAll('a[href^="#"]');
+            for (var i = 0; i < anchors.length; i++) {
+                anchors[i].addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,501 @@
+body {
+  background: #f7f3e8;
+  color: #222;
+  font-family: 'Segoe UI', 'Montserrat', 'Ubuntu', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+
+.navbar {
+  background: #2e5d3b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.navbar .nav-link, .navbar-brand {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link.active, .navbar .nav-link:hover {
+  color: #ff914d !important;
+}
+
+
+.banniere {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.banniere-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  z-index: 0;
+}
+.banniere-contenu {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  width: 100%;
+}
+.titre-principal {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.3);
+
+}
+.texte-principal {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.bouton-principal {
+  background: #ff914d;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.bouton-principal:hover {
+  background: #ff7a1a;
+  color: #fff;
+}
+
+
+footer {
+ background-color: #2e5d3b;
+  color: #fff;
+  padding: 40px 0 20px 0;
+  margin-top: 50px;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0 -4px 24px rgba(46,93,59,0.07);
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.6rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: #ff914d;
+}
+.footer-social a {
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+.footer-social a:hover {
+  color: #ff914d;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  margin-top: 1.2rem;
+  padding-top: 0.7rem;
+  font-size: 0.95rem;
+  color: #e6e6e6;
+}
+
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+.hero-section p.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+
+.btn {
+  background: #ff914d;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #ff7a1a;
+  color: #fff;
+}
+
+.identite-section {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(46,93,59,0.07);
+  margin-top: -60px;
+  margin-bottom: 2.5rem;
+  padding: 2rem 1.5rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+.identite-section .icon {
+  font-size: 2.2rem;
+  color: #2e5d3b;
+  margin-bottom: 0.5rem;
+}
+.identite-section .fiche {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.identite-section .fiche-item {
+  flex: 1 1 180px;
+  min-width: 150px;
+  text-align: center;
+}
+.identite-section .pop-cards {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+.identite-section .pop-card {
+  background: #f7f3e8;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(46,93,59,0.07);
+  padding: 1rem 1.5rem;
+  min-width: 150px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #2e5d3b;
+  font-weight: 600;
+}
+.identite-section .pop-card .bi {
+  font-size: 1.5rem;
+  color: #ff914d;
+  margin-bottom: 0.3rem;
+}
+.carte-section {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(46,93,59,0.07);
+  margin: 2.5rem auto 2rem auto;
+  padding: 2.5rem 1.5rem;
+  max-width: 1000px;
+}
+.carte-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(46,93,59,0.10);
+  margin: 0 auto 1.5rem auto;
+  display: block;
+ 
+}
+.mairies-list {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.mairie-card {
+  background: #f7f3e8;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(46,93,59,0.07);
+  padding: 1rem 1.2rem;
+  min-width: 180px;
+  text-align: center;
+  color: #2e5d3b;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.mairie-card .bi {
+  font-size: 1.3rem;
+  color: #ff914d;
+}
+.valeurs-section {
+  background: #f7f3e8;
+  padding: 2.5rem 0 2rem 0;
+}
+.valeurs-section .card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(46,93,59,0.08);
+  background: #fff;
+  margin-bottom: 1.5rem;
+  transition: transform 0.15s;
+}
+.valeurs-section .card:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+.valeurs-section .card .bi {
+  font-size: 2.5rem;
+  color: #ff914d;
+  margin-bottom: 0.7rem;
+}
+.valeurs-section .card-title {
+  color: #2e5d3b;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.pourquoi-section {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(46,93,59,0.07);
+  margin: 2.5rem auto 2rem auto;
+  padding: 2.5rem 1.5rem;
+  max-width: 900px;
+}
+@media (max-width: 991px) {
+  .identite-section .fiche {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .valeurs-section .row {
+    flex-direction: column;
+  }
+  .carte-section {
+    padding: 1.2rem 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero-section h1, .titre-principal {
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+  .identite-section, .pourquoi-section, .gallery-section, .valeurs-section, .contact-section {
+    padding: 1rem 0.3rem;
+    border-radius: 10px;
+  }
+  .gallery-title, .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .gallery-img, .card-image {
+    height: 140px;
+    max-width: 100%;
+  }
+  .carte-img, #map-abobo {
+    max-width: 100vw !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    border-radius: 8px !important;
+  }
+  .mairie-card, .carte-mairie, .maire-card-elegant, .maire-card-custom {
+    min-width: 0;
+    max-width: 100%;
+    padding: 1rem 0.5rem;
+  }
+  .btn, .bouton-principal, .contact-section .btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem 0;
+    border-radius: 20px;
+  }
+  .navbar-brand img {
+    height: 36px !important;
+  }
+  .navbar {
+    padding: 0.3rem 0.5rem;
+  }
+}
+.maire-card-custom {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(46,93,59,0.08);
+  min-width: 220px;
+  max-width: 320px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.15s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.maire-card-custom:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+.maire-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #f7f3e8;
+  border: 2px solid #2e5d3b;
+  margin-bottom: 0.5rem;
+}
+#map-abobo {
+  width: 100%;
+  min-height: 320px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 2px 12px rgba(46,93,59,0.10);
+}
+@media (max-width: 991px) {
+  .maire-card-custom {
+    min-width: 180px;
+  }
+}
+@media (max-width: 600px) {
+  .maire-card-custom {
+    min-width: 120px;
+    padding: 1.2rem 0.5rem;
+  }
+  #map-abobo {
+    min-height: 220px;
+  }
+}
+.contact-section {
+  background: #f7f3e8;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(46,93,59,0.07);
+  margin: 2.5rem auto 2rem auto;
+  padding: 2.5rem 1.5rem;
+  max-width: 900px;
+}
+.contact-section .form-label {
+  color: #2e5d3b;
+  font-weight: 500;
+}
+.contact-section .form-control:focus {
+  border-color: #ff914d;
+  box-shadow: 0 0 0 0.2rem rgba(255,145,77,0.15);
+}
+.contact-section .btn {
+  background: #ff914d;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  transition: background 0.2s;
+}
+.contact-section .btn:hover {
+  background: #ff7a1a;
+  color: #fff;
+}
+.mairies-section .mairie-card-custom {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(46,93,59,0.08);
+  min-width: 220px;
+  max-width: 350px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.15s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.mairies-section .mairie-card-custom:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+.derniers-maires-section {
+  background: #f7f3e8;
+}
+.maire-card-elegant {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(46,93,59,0.10);
+  min-width: 220px;
+  max-width: 350px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.15s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.maire-card-elegant:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+.maire-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #2e5d3b;
+  background: #f7f3e8;
+  box-shadow: 0 2px 8px rgba(46,93,59,0.10);
+}
+@media (max-width: 991px) {
+  .derniers-maires-section .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.cartes-mairies {
+  background: #f7f3e8;
+  padding: 40px 0;
+  text-align: center;
+}
+.titre-section {
+  color: #2e5d3b;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.liste-mairies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.carte-mairie {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(46,93,59,0.08);
+  padding: 24px 18px;
+  min-width: 220px;
+  max-width: 320px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icone-mairie i {
+  font-size: 2.5rem;
+  color: #ff914d;
+  margin-bottom: 10px;
+}
+.titre-mairie {
+  color: #2e5d3b;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.texte-mairie {
+  font-size: 1rem;
+  color: #222;
+}
+@media (max-width: 900px) {
+  .liste-mairies {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
