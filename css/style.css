@@ -306,10 +306,13 @@ footer {
     padding: 1rem 0.3rem !important;
     border-radius: 10px !important;
   }
-  .titre-principal, .section-title, .titre-section {
-    font-size: 1.2rem !important;
-    margin-bottom: 0.5rem !important;
+  .titre-principal, .section-title, .titre-section, h1 {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.7rem !important;
     padding-top: 0.5rem !important;
+    word-break: break-word !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
   }
   .texte-principal {
     font-size: 0.95rem !important;
