@@ -269,6 +269,7 @@ footer {
   padding: 2.5rem 1.5rem;
   max-width: 900px;
 }
+
 @media (max-width: 991px) {
   .identite-section .fiche {
     gap: 1rem;
