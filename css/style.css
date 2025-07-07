@@ -336,9 +336,10 @@ footer {
   }
   .hero-section h1, .titre-principal {
     font-size: 1.3rem;
-    padding-top: 10px;
+    padding-top: 30px;
     margin-bottom: 0.5rem;
   }
+  
   .texte-principal {
     font-size: 0.95rem;
     margin-bottom: 1rem;
